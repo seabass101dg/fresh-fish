@@ -1,2 +1,3 @@
 # fresh-fish
-HTML Webstie
+HTML Website
+> Learning the basics
