@@ -7,6 +7,10 @@ $("path, circle").mouseleave(function(e) {
   $('#info-box').css('display','none');
 });
 
+$("path").click(function(e){
+  document.getElementById("img").src = "images/"+ e.target.id + ".jpg";
+})
+
 $(document).mousemove(function(e) {
   $('#info-box').css('top',e.pageY-$('#info-box').height()-30);
   $('#info-box').css('left',e.pageX-($('#info-box').width())/2);
