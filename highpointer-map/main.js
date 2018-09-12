@@ -1,3 +1,5 @@
+  const highpoints = new Set(["AZ", "GA", "TX", "NM", "KS", "MO", "KY", "TN", "VA", "NC", "SC"])
+
 $("path, circle").hover(function(e) {
   $('#info-box').css('display','block');
   $('#info-box').html($(this).data('info'));
@@ -8,7 +10,11 @@ $("path, circle").mouseleave(function(e) {
 });
 
 $("path").click(function(e){
-  document.getElementById("img").src = "images/"+ e.target.id + ".jpg";
+  if(highpoints.has(e.target.id)){
+    document.getElementById("img").src = "images/"+ e.target.id + ".jpg";
+  } else {
+    document.getElementById("img").src = "images/comingsoon.jpg";
+  }
 })
 
 $(document).mousemove(function(e) {
