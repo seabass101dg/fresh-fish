@@ -1,4 +1,4 @@
-  const highpoints = new Set(["AZ", "GA", "TX", "NM", "KS", "MO", "KY", "TN", "VA", "NC", "SC"])
+  const highpoints = new Set(["AZ", "GA", "TX", "NM", "KS", "MO", "KY", "TN", "VA", "NC", "SC", "FL", "AL", "LA", "AR", "MS"])
 
 $("path, circle").hover(function(e) {
   $('#info-box').css('display','block');
